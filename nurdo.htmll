@@ -1,1 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h2 id="about">Ала-Тоо колледж</h2>
 
+        <img src="c:\Users\user\Pictures\images.png"
+alt="лого"
+width="180" height="180">
+<a href="#about">Перейти к разделу "Обо мне"</a>
+
+    </header>
+    <h1>Бая красавчик</h1>
+    <p>Это сайт Байэля</p>
+    <img src="c:\Users\user\Pictures\MSI Wallpaper\MSI.png"
+alt="Обои"
+width="480" height="180">
+    <ol>
+        <li>Картошка</li>
+        <li>Молоко</li>
+        <li>Печеньки</li>
+    </ol>
+    <a> href="https://github.com/Steammaestro-maker/HTML.git">Github</a>
+    <!-- table — таблица; caption — её название; tr — строка;
+           th — заголовочная ячейка; td — ячейка с данными.
+           Без CSS браузер может не рисовать границы. Это нормально. -->
+      <table border="3">
+        <caption>Мои умения</caption>
+        <thead>
+          <tr>
+            <th scope="col">Ниша</th>
+            <th scope="col">Достижение</th>
+            <th scope="col">Возраст</th>
+            <th scope="col">Стаж</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="rowgroup" rowspan="2">Плавание</th>
+            <td>    Проплыл 100 метров</td>
+            <td>16 лет</td>
+            <td>2 года</td>
+          </tr>
+          <tr>
+            <td> </td>
+            <td> </td>
+            <td>  </td>
+          </tr>
+          <tr>
+            <th scope="row">Таэквон-До</th>
+            <td>    Зеленый пояс</td>
+            <td>10 лет</td>
+            <td>4 года</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th scope="row" colspan="3">Всего достижений</th>
+            <td>2</td>
+          </tr>
+        </tfoot>
+      </table>
+      <h1>За свою карьеру я пропустил более 9000 бросков, проиграл почти 300 игр. 26 раз мне доверяли сделать финальный победный бросок, и я промахивался. Я терпел поражения снова, и снова, и снова. И именно поэтому я добился успеха. Майкл Джордан, баскетболист </h1>
+      <h1>Через 20 лет вы будете больше разочарованы теми вещами, которые вы не делали, чем теми, которые вы сделали. Так отчальте от тихой пристани. Почувствуйте попутный ветер в вашем парусе. Двигайтесь вперед, действуйте, открывайте!Марк Твен, писатель</h1>
+      
+      <article id="#about">Обо мне</article>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- rowspan объединяет строки, colspan — столбцы. -->
+    </section>
+    
+
+</body>
+</html>
