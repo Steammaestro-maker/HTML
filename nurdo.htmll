@@ -68,28 +68,149 @@ width="480" height="180">
       <h1>За свою карьеру я пропустил более 9000 бросков, проиграл почти 300 игр. 26 раз мне доверяли сделать финальный победный бросок, и я промахивался. Я терпел поражения снова, и снова, и снова. И именно поэтому я добился успеха. Майкл Джордан, баскетболист </h1>
       <h1>Через 20 лет вы будете больше разочарованы теми вещами, которые вы не делали, чем теми, которые вы сделали. Так отчальте от тихой пристани. Почувствуйте попутный ветер в вашем парусе. Двигайтесь вперед, действуйте, открывайте!Марк Твен, писатель</h1>
       
-      <article id="#about">Обо мне</article>
-      
+      <article id="#about">Мой любимый артист</article>
+      <div id="media">
+        <video controls width="920">
+<source src="c:\Users\user\Videos\Gazan - 67 Six seven _ Official music video.mp4" type="video/mp4">
+<track src="media/subtitles.vtt" kind="captions"
+ srclang="ru" label="Русский">
+Ваш браузер не поддерживает видео.
+</video>
+    <div id="audio">
+        <p>Песенка из видео</p>
+        <audio controls>
+<source src="c:\Users\user\Music\Gazan - 67 Six seven _ Official music video.mp3" type="audio/mpeg">
+Ваш браузер не поддерживает аудио.
+</audio>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <!-- rowspan объединяет строки, colspan — столбцы. -->
+<form>
+    <section>    
+        <fieldset>
+          <legend>Информация о студенте</legend>
+          <p>
+            <label for="student-name">Имя (обязательно):</label><br>
+            <input type="text" id="student-name" name="student_name" placeholder="Например, Асан" required minlength="2" maxlength="80">
+          </p>
+          <p>
+            <label for="email">Учебный email:</label><br>
+            <input type="email" id="email" name="email" placeholder="student@example.com">
+          </p>
+          <p>
+            <label for="phone">Телефон:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="Введите вымышленный номер">
+          </p>
+          <p>
+            <label for="birthday">Дата рождения:</label><br>
+            <input type="date" id="birthday" name="birthday">
+          </p>
+          <p>
+            <label for="course">Курс:</label>
+            <input type="number" id="course" name="course" min="1" max="6" value="1">
+          </p>
+          <p>
+            <label for="demo-password">Пример пароля (не используйте настоящий):</label><br>
+            <input type="password" id="demo-password" name="demo_password" minlength="8" autocomplete="new-password">
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Учебные интересы</legend>
+          <p>
+            <label for="direction">Направление:</label>
+            <select id="direction" name="direction">
+              <option value="">Выберите направление</option>
+              <optgroup label="Технические примеры">
+                <option value="web">Веб-разработка</option>
+                <option value="data">Анализ данных</option>
+              </optgroup>
+              <optgroup label="Экономические примеры">
+                <option value="finance">Финансы</option>
+              </optgroup>
+            </select>
+          </p>
+          <p>
+            <label for="language">Язык обучения (можно вписать свой):</label>
+            <input list="languages" id="language" name="language">
+            <datalist id="languages">
+              <option value="Кыргызский"></option>
+              <option value="Русский"></option>
+              <option value="Английский"></option>
+            </datalist>
+          </p>
+          <!-- Одинаковый name объединяет radio в группу с одним выбором. -->
+          <fieldset>
+            <legend>Формат учебного занятия</legend>
+            <label><input type="radio" name="format" value="offline" checked> В аудитории</label>
+            <label><input type="radio" name="format" value="online"> Онлайн</label>
+          </fieldset>
+          <p>Интересующие темы:</p>
+          <p>
+            <label><input type="checkbox" name="topics" value="html" checked> HTML</label>
+            <label><input type="checkbox" name="topics" value="design"> Дизайн</label>
+            <label><input type="checkbox" name="topics" value="analytics"> Аналитика</label>
+          </p>
+          <p>
+            <label for="confidence">Уверенность в HTML (от 0 до 10):</label>
+            <input type="range" id="confidence" name="confidence" min="0" max="10" value="3">
+          </p>
+          <p>
+            <label for="color">Любимый цвет:</label>
+            <input type="color" id="color" name="color" value="#234567">
+          </p>
+          <p>
+            <label for="portfolio">Ссылка на портфолио:</label>
+            <input type="url" id="portfolio" name="portfolio" placeholder="https://example.com">
+          </p>
+          <p>
+            <label for="attachment">Файл задания:</label>
+            <input type="file" id="attachment" name="attachment" accept=".html,.txt">
+          </p>
+          <p>
+            <label for="message">Что хотите изучить?</label><br>
+            <textarea id="message" name="message" rows="4" cols="40" placeholder="Напишите несколько предложений"></textarea>
+          </p>
+        </fieldset>
+        <p>
+          <button type="submit" disabled>Отправка не подключена</button>
+          <button type="reset">Сбросить анкету</button>
+        </p>
+        <!-- reset возвращает начальные значения, а не обязательно очищает всё.
+             Для реальной отправки нужны обработчик, action и подходящий method.
+             Загрузка файлов обычно требует method="post" и enctype="multipart/form-data". -->
+      </form>
     </section>
+    <footer>
+        <footer>
+    <hr>
+    <h2>Контакты создателя сайта</h2>
+    <address>
+      Автор: Байэл <br>
+      Пример email: <a href="blablabla@gmail.com">student@example.com</a>.
+    </address>
+    <p><small>&copy; 2026. Демо версия сайта. Все что вы видите на сайте демонстраионное.</small></p>
+    <p><a href="#top">Вернуться наверх ↑</a></p>
+  </footer>
+</body>
+</html>
+    </footer>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     
 
 </body>
